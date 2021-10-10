@@ -1,0 +1,83 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+ 
+}
+
+
+
+
+body{
+  font-family:"Fira Sans" ,sans-serif;
+  line-height: 1.6;
+  align-items: center;
+  display: grid;
+  min-height: 100vh;
+  text-align: center;
+  justify-content: center;
+}
+.card{
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  width: 90%;
+  margin-left: 20px;
+  text-align: center;
+  padding: 2.5em;
+  background-color: #53A26B;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  color:white;
+}
+.info .name{
+  font-size: 2rem;
+  line-height: 1.3;
+  padding: 4px;
+  letter-spacing: 1px;
+}
+.image{
+  border-radius: 50%;
+  border:5px solid white;
+}
+.info .name::after{
+  content:"";
+  display: block;
+  height: 1px;
+  width: 4rem;
+  background-color: #5bcbf0;
+  margin: .1em auto;
+
+}
+.info .age{
+  font-size: 2rem;
+  line-height: 1.3;
+}
+.info .report{
+  font-size: 23px;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+
+}
+.info-problem{
+  font-weight: 300;
+  opacity: 0.8;
+  margin-bottom: 0;
+
+}
+@media (min-width: 520px){
+ .card{
+  flex-direction: row;
+  margin-left: 10px;
+ }
+ .info{
+  text-align: left;
+  margin-left: 2rem;
+ }
+ .info .name::after{
+  margin-left: 0;
+
+ }
+}

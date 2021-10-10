@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+html{
+	scroll-behavior: smooth;
+}
+*{
+	box-sizing:border-box;
+	scroll-behavior: smooth;
+}
+
+
+
+body{
+  background: #E5FAF0;
+  padding: 0 10px;
+    margin:0px;
+
+  
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+.box{
+  width: 500px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  padding: 50px;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+}
+.box h1{
+  margin-bottom: 30px;
+  color:white;
+  text-align: center;
+  text-transform: capitalize;
+}
+.box .inputbox{
+position: relative;
+
+
+
+}
+.box .inputbox input{
+  width: 100%;
+  outline: none;
+  padding: 9px;
+  font-size: 16px;
+  color:aqua;
+  letter-spacing: 1px;
+  border:none;
+  border-bottom: .8px solid #fff;
+  background-color: transparent;
+}
+.box .inputbox label{
+  position: absolute;
+  top:-5px;
+  left: 0;
+  bottom: -50px;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 16px;
+  color:#fff;
+  transition:0.5s;
+}
+
+.box input[type="submit"]{
+  background:transparent;
+  border:none;
+  outline: none;
+  color: white;
+  font-size: 21px;
+  background:#73d09b;
+  padding: 9px 18px;
+  border-radius: 5px;
+
+}
+
+@media (max-width:420px) {
+  .box{
+    width:370px;
+    margin-top: 50px;
+  }
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}

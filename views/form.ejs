@@ -1,11 +1,132 @@
+<div class="container" style="text-align: center;font-size:50px">
+  Fill the form to diagonize yourself
+</div>
+<br>
+<div class="container" style="border: 4px double green; width: 700px;">
 <form action="/users/form" method="POST">
     <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Enter name</label>
+        <label for="formGroupExampleInput" class="form-label">Enter your name :</label>
         <input name="name" type="text" class="form-control" id="name" placeholder="ex:- rudheer">
     </div>
     <div class="mb-3">
-        <label for="formGroupExampleInput2" class="form-label">Enter age</label>
+        <label for="formGroupExampleInput2" class="form-label">Enter your age :</label>
         <input name="age" type="number" class="form-control" id="age" placeholder="ex:- 21">
     </div>
-    <a href="/users/result" class="btn btn-primary" style="margin-bottom: 5px; margin-left:25px;">submit</a>
+    <select name="sex" id="gender" class="form-select" aria-label="what is your gender?">
+        <option value="male">Male</option>
+        <option value="female">female</option>
+    </select>
+    <br>
+    What is your current body Temperature :
+    <select name="temp" id="temp" class="form-select" aria-label="what is your gender?">
+        <option value="normal">95-99 F(farienheat)</option>
+        <option value="mild">100-102 F(farienheat)</option>
+        <option value="serious"> > 103 F(farienheat)</option>
+    </select>
+    <br>
+    Do you have body pains ?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="bp" id="bp">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Do you have headace?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="head" id="head">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Any running nose or sneezing?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="rns" id="rns">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Are your eyes red?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="er" id="er">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Do you feel shortness of breath(dyspnea)?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="sob" id="sob">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Lost sense of smell?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="lss" id="lss">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Lost ability to taste?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="lat" id="lat">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Have u met anyone who was diagnosed bt covid 19 recently?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="met" id="met">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Have u been in crowded areas recently?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="cd" id="cd">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Have you worked and volunteered in a healthcare facility?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="wk" id="wk">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Do you feel chest pain?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="cp" id="cp">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    loss of speech or mobility, or confusion?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="los" id="los">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <br>
+    Did you got fully vaccinated?
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="vaccinated1" id="vaccinated1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes
+        </label>
+    </div>
+    <button type="submit" class="btn btn-outline-success" style="margin-left: 280px;">Submit</button>
 </form>
+</div>

@@ -1,8 +1,30 @@
-<div class="card">
+<div class="container" style="font-size: 60px; text-align: center;">
+Covi-check Report
+</div>
+<div class="card" style="margin-top:10px;border: 4px double green;width: 800px;margin-left :250px;">
     <div class="card-body">
-      so here are the results
+      <b>Name :</b> <%=name%> 
     </div>
-    <div id="answer" class="card-body">
-        <p>you are still an kid </p>
+    <div class="card-body">
+      <b>Age :</b> <%= age %>
     </div>
+    <div class="card-body">
+      <b>Sex :</b> <%= sex %>
+    </div>
+    <div class="card-body">
+      <b>Problems faced by you are :-</b>
+        <ul class="list-group">
+          <% for(let i=0;i<problems.length;i++){ %>
+            <li class="list-group-item"><%= problems[i] %></li>
+          <% } %>
+        </ul> 
+    </div>
+    <div class="card-body">
+      <b>Report Analysis:-</b><br>
+      <div class="card-body" style="background-color:#90ee90;">
+        <%= msg %>
+      </div>
+    </div>
+  </div>
+  <div class="card-body" style="text-align: center;">
   </div>
